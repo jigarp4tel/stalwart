@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "MADE Coachella";
+  src: url("./font/Coachella_Font_Family/MADECoachella\ 400.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MADE Coachella";
+  src: url("./font/Coachella_Font_Family/MADECoachella-Thin\ 250.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MADE Coachella";
+  src: url("./font/Coachella_Font_Family/MADECoachella-Light\ 300.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MADE Coachella";
+  src: url("./font/Coachella_Font_Family/MADECoachella-Medium\ 500.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MADE Coachella";
+  src: url("./font/Coachella_Font_Family/MADECoachella-Bold\ 700.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MADE Coachella", serif;
+}
+
+.container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar */
+
+nav {
+  padding: 40px 0px;
+}
+
+nav ul {
+  display: flex;
+  color: #3b221d;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-left: 30px;
+}
+nav ul li a {
+  color: #3b221d;
+  text-decoration: none;
+}
+
+.nav-icons li a,
+.menu-bar {
+  font-size: 2rem;
+}
+
+.menu-bar {
+  display: none;
+}
+
+/* Hero Section */
+
+.hero {
+  background: url("../images/hero-bg.png");
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-wrapper {
+  height: 700px;
+}
+
+.hero-text h1,
+.hero-text h2,
+.hero-text p {
+  color: #f7dfb1;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.hero-text p {
+  max-width: 600px;
+  font-weight: 200;
+}
+
+#what-we-offer {
+  padding: 80px 0;
+}
+
+.section-title {
+  color: #947252;
+  border-bottom: 2px solid #947252;
+  text-align: center;
+  padding-bottom: 20px;
+  max-width: 450px;
+  margin: 0 auto 50px;
+}
+
+.section-title h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: 3px;
+}
+
+.section-title h4 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.card {
+  justify-self: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card h5 {
+  margin-top: -50px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #f7dfb1;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+}
