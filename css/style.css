@@ -39,6 +39,10 @@ body {
   font-family: "MADE Coachella", serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1440px;
   max-width: 100%;
@@ -50,6 +54,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Navbar */
@@ -149,13 +157,8 @@ h2 {
   font-size: 3rem;
   font-weight: 200;
 }
-
 .card {
   justify-self: center;
-}
-
-.card img {
-  max-width: 100%;
 }
 
 .card h5 {
@@ -164,6 +167,65 @@ h2 {
   font-size: 1.5rem;
   font-weight: 200;
   color: #f7dfb1;
+}
+
+#shop {
+  background-image: url("../images/shop-bg.svg");
+  padding: 60px;
+}
+
+.shop-title {
+  color: #947252;
+  margin: 30px 0;
+}
+
+.shop-title h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 0.8;
+}
+.shop-title h4 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.men,
+.women {
+  display: flex;
+  flex-direction: column;
+}
+
+.men .shop-title-wrapper {
+  align-self: flex-end;
+}
+
+.women .shop-title-wrapper {
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+
+.men .shop-title {
+  border-left: 3px solid #947252;
+  padding-left: 10px;
+}
+
+.women .shop-title {
+  text-align: right;
+  padding-right: 10px;
+  border-right: 3px solid #947252;
+}
+
+.btn {
+  border: 3px solid #947252;
+  color: #947252;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+.btn:hover {  
+  background-color: rgba(148, 114, 82, 0.2);
+  
 }
 
 @media screen and (max-width: 768px) {
