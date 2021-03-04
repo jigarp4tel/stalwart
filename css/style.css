@@ -305,4 +305,9 @@ footer h5 {
     max-width: 100%;
     border: none;
   }
+
+  .footer-links li{
+    width: 100%;
+    text-align: left;
+  }
 }
