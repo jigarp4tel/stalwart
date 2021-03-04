@@ -37,6 +37,7 @@
 
 body {
   font-family: "MADE Coachella", serif;
+  font-size: 16px;
 }
 
 a {
@@ -60,6 +61,9 @@ img {
   max-width: 100%;
 }
 
+li {
+  list-style-type: none;
+}
 /* Navbar */
 
 nav {
@@ -72,7 +76,6 @@ nav ul {
 }
 
 nav ul li {
-  list-style-type: none;
   font-size: 1.5rem;
   font-weight: lighter;
   margin-left: 30px;
@@ -96,7 +99,7 @@ nav ul li a {
 .hero {
   background: url("../images/hero-bg.png");
   background-repeat: no-repeat;
-  height: 700px;
+  padding: 60px 0;
 }
 
 .wrapper {
@@ -104,10 +107,6 @@ nav ul li a {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   align-items: center;
   gap: 4rem;
-}
-
-.hero-wrapper {
-  height: 700px;
 }
 
 .hero-text h1,
@@ -147,14 +146,14 @@ h2 {
 }
 
 .section-title h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 0.8;
   letter-spacing: 3px;
 }
 
 .section-title h4 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 200;
 }
 .card {
@@ -171,7 +170,7 @@ h2 {
 
 #shop {
   background-image: url("../images/shop-bg.svg");
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .shop-title {
@@ -204,7 +203,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-
 .men .shop-title {
   border-left: 3px solid #947252;
   padding-left: 10px;
@@ -223,9 +221,71 @@ h2 {
   font-size: 1.2rem;
   margin-left: 20px;
 }
-.btn:hover {  
+.btn:hover {
   background-color: rgba(148, 114, 82, 0.2);
-  
+}
+
+/* Footer */
+footer {
+  background-color: #3b221d;
+
+  padding: 30px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+footer img {
+  align-self: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+  border-left: 2px solid #f7dfb1;
+  border-right: 2px solid #f7dfb1;
+}
+
+.footer-links li {
+  list-style-type: none;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+}
+.footer-links li a {
+  color: #f7dfb1;
+}
+
+.footer-links li a:hover {
+  color: rgba(247, 223, 177, 0.623);
+}
+
+footer h5 {
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #f7dfb1;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social li {
+  padding: 10px;
+}
+
+.social li a {
+  color: #f7dfb1;
+  font-size: 2rem;
+}
+
+.social li a:hover {
+  color: rgba(247, 223, 177, 0.623);
 }
 
 @media screen and (max-width: 768px) {
@@ -235,5 +295,14 @@ h2 {
 
   .menu-bar {
     display: block;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    max-width: 100%;
+    border: none;
   }
 }
