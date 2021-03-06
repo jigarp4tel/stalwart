@@ -67,7 +67,7 @@ li {
 /* Navbar */
 
 nav {
-  padding: 40px 0px;
+  padding: 20px 0px;
 }
 
 nav ul {
@@ -76,7 +76,7 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: lighter;
   margin-left: 30px;
 }
@@ -87,7 +87,7 @@ nav ul li a {
 
 .nav-icons li a,
 .menu-bar {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .menu-bar {
